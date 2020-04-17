@@ -9,19 +9,25 @@ function search(){
 
   $.get(url,data).done(function(response){
     console.log(JSON.stringify(response));
+    if(response.Response == "False"){
+      $("#movies").append('<p>'+usersearchkeyword+' not found :(</p>');
+    }
+    else{
+      $('body').css('backgroundImage', 'url('+response.Poster+')');
+      $("#movies").append(
+        '<table class="results">'
+        +'<tr>'+'<td rowspan="8"><img src="'+response.Poster+'" height="450"></td>'+'</tr>'
+        +'<tr>'+'<td><p>'+response.Title+' ('+response.Year+')</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>'+response.Runtime+'</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>'+response.Genre+'</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>'+response.Rated+'</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>'+response.Plot+'</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>Metascore: '+response.Metascore+'</p></td>'+'</tr>'
+        +'<tr>'+'<td><p>imdb Rating: '+response.imdbRating+'</p></td>'+'</tr>'
+        +'</table>'
+      );
+    }
 
-    $("#movies").append(
-      '<table class="results">'
-      +'<tr>'+'<td rowspan="8"><img src="'+response.Poster+'" height="450"></td>'+'</tr>'
-      +'<tr>'+'<td><p>'+response.Title+' ('+response.Year+')</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>'+response.Runtime+'</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>'+response.Genre+'</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>'+response.Rated+'</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>'+response.Plot+'</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>Metascore: '+response.Metascore+'</p></td>'+'</tr>'
-      +'<tr>'+'<td><p>imdb Rating: '+response.imdbRating+'</p></td>'+'</tr>'
-      +'</table>'
-    );
 
   });
 }
