@@ -10,7 +10,7 @@ body{
       display: grid;
       align-items: center;
       justify-content: center;
-      height: 100vw;
+      height: 50vw;
 }
 .container {
     width: 100%;
@@ -58,8 +58,19 @@ p{
   font-family: 'Special Elite', cursive;
   font-size: 1em;
 }
-h5{
+a,a:active, a:visited{
   font-family: 'Special Elite', cursive;
+  font-size: 0.9em;
+  color:black;
+  background-color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: none;
+}
+a:hover{
+  font-family: 'Special Elite', cursive;
+  background-color:red;
+  color:white;
+  text-decoration: none;
 }
 img{
   border-style: solid;
