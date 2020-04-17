@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
+@import url(https://fonts.googleapis.com/css2?family=Special+Elite);
+
+body{
+  text-align:center;
+  /* font-family: 'Lobster', cursive; */
+  /* font-family: 'Bebas Neue', cursive; */
+  /* font-family: 'Special Elite', cursive; */
+}
+h1{
+  font-size: 4em;
+  font-family: 'Permanent Marker', cursive;
+}
+h1:hover {
+  color: #f44336;
+}
+button:hover{
+  background-color: #f44336;
+  color: white;
+}
+button{
+  background-color: black;
+  color: white;
+}
+p{
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+}
+h5{
+  font-family: 'Special Elite', cursive;
+}
+img{
+  border-style: solid;
+  border-width: 5px;
+  border-color: gold;
+}
+.results{
+  width: 800px;
+  padding:10px;
+  background-color: #f44336;
+  color:white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
