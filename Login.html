@@ -3,28 +3,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <meta charset="utf-8">
-    <title>Movies!</title>
+    <title>Login!</title>
+    <!-- <link rel="stylesheet" href="MovieFinder.css"/> -->
     <link rel="stylesheet" href="MovieFinder.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="MovieFinder.js"></script>
   </head>
   <body>
     <div class="container"></div>
     <main id="main">
-      <div align="right">
-        <div id= "welcomeMsg"></div>
-      <button id="loginPage">Login</button>
-      <button id="signup">Signup</button>
-      <button id="logout">Logout</button>
-
-    </div>
       <center>
       <table>
-        <tr><h1> Movie Finder 🎥 </h1></tr>
-        <tr><td><input type="text" id="keyword" name="keyword" placeholder="Enter a movie name or tv series!" size="70"></td>
-          <td><button id="search">search</button></td></tr>
+        <!-- add signup side by side with login -->
+        <tr><h1> 👥 Login 🔑 </h1></tr>
+        <tr><input type="text" id="username" name="username" placeholder="username" size="20"></tr><br>
+        <tr><input type="password" id="password" name="password" placeholder="password" size="20"></tr><br><br>
+        <tr><button id="login">login</button></tr>
+        <tr><button id="cancel">cancel</button></tr>
       </table><br><br>
-      <div id= "movies"></div>
     </center>
   </main>
   </body>
