@@ -1,3 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies!</title>
+    <link rel="stylesheet" href="MovieFinder.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="MovieFinder.js"></script>
+  </head>
+  <body>
+    <div class="container"></div>
+      <main id="main">
+        <div align="right">
+          <div id= "welcomeMsg"align="left"></div>
+          <button id="loginPage" class="loginbtn">Login 🔐</button>
+          <button id="signup" class="loginbtn">Signup 📝</button>
+          <button id="logout" class="loginbtn">Logout 🔑</button>
+      </div>
+      <center>
+      <table>
+        <tr>
+          <h1> Movie Finder 🎞 </h1>
+        </tr>
+        <tr>
+          <td>
+            <input type="search" id="keyword" name="keyword" placeholder="Enter a movie name or tv series!" size="70">
+          </td>
+          <td>
+            <button id="search" class="searchbtn">search</button>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+      <div id= "movies"></div>
+      <footer>
+        <h5> 💭 Created by: Andrij Pokhvalit & Jack Luu ⚡️ Powered by: omdbapi.com</h5>
+      </footer>
+      </center>
+    </main>
+  </body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,22 +52,38 @@
   </head>
   <body>
     <div class="container"></div>
-    <main id="main">
-      <div align="right">
-        <div id= "welcomeMsg"></div>
-      <button id="loginPage">Login</button>
-      <button id="signup">Signup</button>
-      <button id="logout">Logout</button>
-
-    </div>
+      <main id="main">
+        <div align="right">
+          <button class="userbox"><div id= "welcomeMsg"></div></button>
+          <button id="loginPage" class="loginbtn">Login 🔐</button>
+          <button id="signup" class="loginbtn">Signup 📝</button>
+          <button id="logout" class="loginbtn">Logout 🔑</button>
+        </div>
+        <!-- <table width="100%">
+          <tr>
+            <td colspan="50%" align="left"><div id= "welcomeMsg"align="left"></div></td>
+          </tr>
+        </table> -->
       <center>
       <table>
-        <tr><h1> Movie Finder 🎥 </h1></tr>
-        <tr><td><input type="text" id="keyword" name="keyword" placeholder="Enter a movie name or tv series!" size="70"></td>
-          <td><button id="search">search</button></td></tr>
-      </table><br><br>
+        <tr>
+          <h1> Movie Finder 🎞 </h1>
+        </tr>
+        <tr>
+          <td>
+            <input type="search" id="keyword" name="keyword" placeholder="Enter a movie name or tv series!" size="70">
+          </td>
+          <td>
+            <button id="search" class="searchbtn">search</button>
+          </td>
+        </tr>
+      </table>
+      <br><br>
       <div id= "movies"></div>
-    </center>
-  </main>
+      <footer>
+        <h5> 💭 Created by: Andrij Pokhvalit & Jack Luu ⚡️ Powered by: omdbapi.com</h5>
+      </footer>
+      </center>
+    </main>
   </body>
 </html>

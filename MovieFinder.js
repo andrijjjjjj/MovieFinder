@@ -1,4 +1,5 @@
 var x = 0;
+
 var comment_array = Array();
 var rating_array = Array();
 var user_array = Array();
@@ -32,7 +33,7 @@ function search(){
   $.get(url,data).done(function(response){
     console.log(JSON.stringify(response));
     if(response.Response == "False"){
-      $("#movies").append('<p>'+usersearchkeyword+' not found :(</p>');
+      $("#movies").append('<h4>'+usersearchkeyword+' not found :(</h4>');
     }
     else{
       $('body').css('backgroundImage', 'url('+response.Poster+')');
@@ -51,7 +52,7 @@ function search(){
 
       // Jacks modified code
         if(window.location.hash.substring(1) == false){
-          $("#movies").append('<h4> Login or signup for a free account to post reviews! </h4><br>');
+          $("#movies").append('<h4> Login 🔐 or signup 📝 for a free account to post reviews! </h4><br>');
 
         }
         else{

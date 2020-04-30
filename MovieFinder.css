@@ -1,15 +1,79 @@
+/* font imports */
 @import url(https://fonts.googleapis.com/css2?family=Permanent+Marker);
 @@import url(https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap);
 
+/* search, logo, results, reviews */
 body{
   text-align:center;
   background-attachment: fixed;
-      background-size: cover;
-      display: grid;
-      align-items: center;
-      justify-content: center;
-      height: 50vw;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
 }
+
+/* text input styles */
+input[type=username], input[type=password], input[type=email] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* search bar style */
+input[type=search] {
+  padding: 12px 20px;
+}
+
+/* login, logout button style */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.5;
+
+}
+
+/* hover  */
+button:hover {
+  opacity: 1;
+}
+
+/* search button style */
+.searchbtn {
+  background-color: #BE1616;
+  width:100%;
+  opacity: 0.6;
+}
+
+.userbox {
+  width:auto;
+  opacity: 1;
+  background-color: #ffffff00;
+}
+
+/* cancel button style  */
+.cancelbtn {
+  background-color: #BE1616;
+  width:15%;
+  opacity: 0.5;
+}
+
+/* login button style */
+.loginbtn {
+  background-color: black;
+  width:15%;
+  opacity: 0.5;
+}
+
+/* background container */
 .container {
     width: 100%;
     height: 100%;
@@ -19,6 +83,8 @@ body{
     background: inherit;
     overflow: hidden;
 }
+
+/* initialize background */
 .container:before {
     content: "";
     position: absolute;
@@ -31,14 +97,25 @@ body{
     filter: blur(10px);
     margin: -20px;
 }
+
+/* default font style for webpage */
 h3{
   font-family: 'Teko', sans-serif;
 }
+
+/* for user account on webpage */
 h4{
   font-family: 'Teko', sans-serif;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
+h5{
+  font-family: 'Teko', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* webpage logo text style */
 h1{
   font-size: 4em;
   font-family: 'Permanent Marker', cursive;
@@ -50,24 +127,21 @@ h1:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-button:hover{
-  background-color: #f44336;
-  color: black;
-}
-button{
-  background-color: black;
-  color: white;
-}
+
+/* for movie poster in results */
 img{
   border-style: solid;
   border-width: 5px;
   border-color: gold;
 }
+
+/* result styles */
 .results{
   width: 800px;
   padding:10px;
-  background-color: #f44336;
+  background-color: #BE1616;
   color:white;
+  opacity: 0.8;
   border-style: solid;
   border-width: 5px;
   border-color: black;
