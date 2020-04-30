@@ -5,6 +5,7 @@
 /* search, logo, results, reviews */
 body{
   text-align:center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   display: grid;

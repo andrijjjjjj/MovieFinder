@@ -37,6 +37,10 @@ function search(){
     }
     else{
       $('body').css('backgroundImage', 'url('+response.Poster+')');
+      $('body').css('background-repeat', 'no-repeat');
+      $('body').css('background-attachment', 'fixed');
+      $('body').css('background-size', 'cover');
+
       $("#movies").append(
         '<table class="results">'
         +'<tr>'+'<td rowspan="8"><img src="'+response.Poster+'" height="450"></td>'+'</tr>'
@@ -120,7 +124,21 @@ function customHome(){
   }
 }
 $(document).ready(function(){
-  customHome();
+  if(location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "MovieFinder.html"){
+    customHome();
+  }
+  else if(location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "Login.html"){
+    $('body').css('backgroundImage', 'url(\'https://images.cdn3.stockunlimited.net/preview1300/cinema-background-with-movie-objects_1823381.jpg\')');
+    $('body').css('background-repeat', 'no-repeat');
+    $('body').css('background-attachment', 'fixed');
+    $('body').css('background-size', 'cover');
+  }
+  else{
+    $('body').css('backgroundImage', 'url(\'https://previews.123rf.com/images/sonulkaster/sonulkaster1203/sonulkaster120300037/12819991-illustration-of-movie-theme-objects-on-red-background-.jpg\')');
+    $('body').css('background-repeat', 'no-repeat');
+    $('body').css('background-attachment', 'fixed');
+    $('body').css('background-size', 'cover');
+  }
 });
 
 // login submit button (and signup+login)
